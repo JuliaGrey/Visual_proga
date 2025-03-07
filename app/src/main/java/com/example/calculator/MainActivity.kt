@@ -75,10 +75,10 @@ class MainActivity : AppCompatActivity() {
             result.text = ""
         }
         b_equal.setOnClickListener {
-            val optext = operation.text.toString() // Выражение в формате строки
+            val optext = operation.text.toString() 
             if (optext.isNotEmpty()) {
                 try {
-                    val res = evaluateExpression(optext) // Вызов функции для вычисления выражения
+                    val res = evaluateExpression(optext) 
                     result.text = if (res == res.toLong().toDouble()) res.toLong().toString() else res.toString()
                 } catch (e: Exception) {
                     result.text = "Error"

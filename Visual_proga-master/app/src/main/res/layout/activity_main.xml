@@ -26,6 +26,14 @@
         android:backgroundTint="#CC8A4C"
         android:text="Music"
         android:textColor="@color/white" />
+    <Button
+        android:id="@+id/GPS_activity"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="25dp"
+        android:backgroundTint="#CC8A4C"
+        android:text="GPS"
+        android:textColor="@color/white" />
     </LinearLayout>
 
 

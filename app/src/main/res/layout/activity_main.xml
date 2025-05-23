@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:orientation="vertical"
     android:background="#4B0404"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/calculator_activity"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:textSize="25dp"
         android:backgroundTint="#CC8A4C"
         android:text="Calculator"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
     <Button
         android:id="@+id/MP3_activity"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:textSize="25dp"
         android:backgroundTint="#CC8A4C"
         android:text="Music"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
     <Button
         android:id="@+id/GPS_activity"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:textSize="25dp"
         android:backgroundTint="#CC8A4C"
         android:text="GPS"
-        android:textColor="@color/white" />
-    </LinearLayout>
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+</LinearLayout>
 
 

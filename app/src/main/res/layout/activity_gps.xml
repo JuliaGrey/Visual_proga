@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GPS">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,21 +17,21 @@
             android:id="@+id/tvCoordinates"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="24dp"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Начать запись"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:text="Начать запись" />
 
         <Button
             android:id="@+id/btnStop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Остановить запись"/>
+            android:text="Остановить запись" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

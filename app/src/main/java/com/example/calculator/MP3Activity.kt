@@ -34,7 +34,8 @@ class MP3Activity : AppCompatActivity() {
     private val songsList = mutableListOf<File>()
     private var currentSongIndex = 0
     private val REQUEST_PERMISSION_CODE = 123
-    private var selectedDirectory: File = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
+    private var selectedDirectory: File =
+        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
 
     private val directoryPickerResult = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -153,7 +154,10 @@ class MP3Activity : AppCompatActivity() {
                     currentTimeText.text = formatTime(progress)
                 }
             }
-            override fun onStartTrackingTouch(seekBar: SeekBar) = handler.removeCallbacks(updateSeekBar)
+
+            override fun onStartTrackingTouch(seekBar: SeekBar) =
+                handler.removeCallbacks(updateSeekBar)
+
             override fun onStopTrackingTouch(seekBar: SeekBar) = startSeekbarUpdate()
         })
 

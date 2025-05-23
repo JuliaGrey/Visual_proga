@@ -1,13 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
+        <config>
+          <theme>@style/Theme.Calculator</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gps.xml">
+        <config>
+          <theme>@style/Theme.Calculator</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.Calculator</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mp3.xml">
+        <config>
+          <theme>@style/Theme.Calculator</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50eea15d-c47e-457c-8dd6-eccf3e7c0257" name="Changes" comment="">
+    <list default="true" id="f43f14da-80ef-4668-a25c-29e2d003bae0" name="Changes" comment="small improvements of gps file">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Visual_proga-master/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/GPS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/GPS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/androidTest/java/com/example/calculator/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/CalculatorActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/GPS.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/MP3Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/java/com/example/calculator/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/drawable/rabbit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/layout/activity_calculator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/layout/activity_gps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/layout/activity_mp3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/raw/example.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/app/src/test/java/com/example/calculator/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/hs_err_pid14096.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/replay_pid14096.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visual_proga-master/settings.gradle.kts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +103,67 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Calculator" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Calculator" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Calculator" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Calculator" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2vMzAtU8XIbADRBz9UQZpnG7NZA" />
+  <component name="ProjectId" id="2vMhvPIiEuXAsAASENGYdF7sbwT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
@@ -37,18 +171,178 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/AndroidStudioProjects/Visual_proga&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/AndroidStudioProjects/RedDragon/Visual_proga-master/Visual_proga-master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="android.template.-1696506003">
+      <recent name="com.example.calculator" />
+    </key>
+    <key name="android.template.-1890477130">
+      <recent name="com.example.calculator" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Calculator.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="50eea15d-c47e-457c-8dd6-eccf3e7c0257" name="Changes" comment="" />
-      <created>1743969590962</created>
+      <changelist id="f43f14da-80ef-4668-a25c-29e2d003bae0" name="Changes" comment="" />
+      <created>1743961079217</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1743969590962</updated>
+      <updated>1743961079217</updated>
     </task>
+    <task id="LOCAL-00001" summary="Mp3+Calculator_first version">
+      <option name="closed" value="true" />
+      <created>1744043685708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744043685708</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Mp3+Calculator_first version">
+      <option name="closed" value="true" />
+      <created>1744043823040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744043823040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="MP3 upgraded">
+      <option name="closed" value="true" />
+      <created>1747610584945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747610584945</updated>
+    </task>
+    <task id="LOCAL-00004" summary="last submodule deletion">
+      <option name="closed" value="true" />
+      <created>1747799030219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747799030219</updated>
+    </task>
+    <task id="LOCAL-00005" summary="small improvements of gps file">
+      <option name="closed" value="true" />
+      <created>1747950927098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950927098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mp3+Calculator_first version" />
+    <MESSAGE value="MP3 upgraded" />
+    <MESSAGE value="last submodule deletion" />
+    <MESSAGE value="small improvements of gps file" />
+    <option name="LAST_COMMIT_MESSAGE" value="small improvements of gps file" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.example.calculator">
+          <value>
+            <CheckInfo lastCheckTimestamp="1747786553352" />
+          </value>
+        </entry>
+        <entry key="com.example.calculator.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1747786553351" />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

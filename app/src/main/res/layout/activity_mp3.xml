@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:orientation="vertical"
     android:background="#4B0404"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MP3Activity">
 
     <TextView
         android:id="@+id/song_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center|end"
+        android:padding="16dp"
         android:text="No song selected"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:gravity="center|end"
-        android:ellipsize="marquee"/>
+        android:textSize="18sp" />
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="100dp"
         android:layout_marginBottom="40dp"
         android:src="@drawable/rabbit" />
+
     <ListView
         android:id="@+id/songs_list_view"
         android:layout_width="match_parent"
@@ -35,63 +35,67 @@
         android:background="#FFFFFF"
         android:divider="#4B0404"
         android:dividerHeight="1dp"
-        android:fastScrollEnabled="true"
-        />
+        android:fastScrollEnabled="true" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/current_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
+
         <SeekBar
             android:id="@+id/seek_bar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
         <TextView
             android:id="@+id/total_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
+
     <Button
         android:id="@+id/select_button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="20sp"
         android:backgroundTint="#CC8A4C"
-        android:text="Select Song"/>
+        android:text="Select Song"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/play_button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:textSize="20sp"
         android:backgroundTint="#CC8A4C"
-        android:text="Play"/>
+        android:text="Play"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/pause_button"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:textSize="20sp"
         android:backgroundTint="#CC8A4C"
-        android:text="Pause"/>
+        android:text="Pause"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/stop_button"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:textSize="20sp"
         android:backgroundTint="#CC8A4C"
-        android:text="Stop"/>
+        android:text="Stop"
+        android:textSize="20sp" />
 
-    
+
     <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

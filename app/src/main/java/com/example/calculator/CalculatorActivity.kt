@@ -60,7 +60,7 @@ class CalculatorActivity : AppCompatActivity() {
         b_num7.setOnClickListener { operation.append("7") }
         b_num8.setOnClickListener { operation.append("8") }
         b_num9.setOnClickListener { operation.append("9") }
-        b_num0.setOnClickListener {operation.append("0") }
+        b_num0.setOnClickListener { operation.append("0") }
         b_num000.setOnClickListener { operation.append("000") }
         b_num_pnt.setOnClickListener { operation.append(".") }
         b_num_pr.setOnClickListener { operation.append("%") }
@@ -79,7 +79,8 @@ class CalculatorActivity : AppCompatActivity() {
             if (optext.isNotEmpty()) {
                 try {
                     val res = evaluateExpression(optext)
-                    result.text = if (res == res.toLong().toDouble()) res.toLong().toString() else res.toString()
+                    result.text = if (res == res.toLong().toDouble()) res.toLong()
+                        .toString() else res.toString()
                 } catch (e: Exception) {
                     result.text = "Error"
                 }
@@ -113,12 +114,24 @@ class CalculatorActivity : AppCompatActivity() {
                 ops.add(expression[i])
             } else if (expression[i] == ')') {
                 while (ops.isNotEmpty() && ops.last() != '(') {
-                    values.add(applyOp(ops.removeAt(ops.size - 1), values.removeAt(values.size - 1), values.removeAt(values.size - 1)))
+                    values.add(
+                        applyOp(
+                            ops.removeAt(ops.size - 1),
+                            values.removeAt(values.size - 1),
+                            values.removeAt(values.size - 1)
+                        )
+                    )
                 }
                 ops.removeAt(ops.size - 1)
             } else if (isOperator(expression[i])) {
                 while (ops.isNotEmpty() && precedence(ops.last()) >= precedence(expression[i])) {
-                    values.add(applyOp(ops.removeAt(ops.size - 1), values.removeAt(values.size - 1), values.removeAt(values.size - 1)))
+                    values.add(
+                        applyOp(
+                            ops.removeAt(ops.size - 1),
+                            values.removeAt(values.size - 1),
+                            values.removeAt(values.size - 1)
+                        )
+                    )
                 }
                 ops.add(expression[i])
             } else if (expression.startsWith("sqrt", i)) {
@@ -134,8 +147,7 @@ class CalculatorActivity : AppCompatActivity() {
                     i++
                     continue
                 }
-            }
-            else if (expression.startsWith("cos", i)) {
+            } else if (expression.startsWith("cos", i)) {
                 i += 3
                 if (i < expression.length && expression[i] == '(') {
                     i++
@@ -148,8 +160,7 @@ class CalculatorActivity : AppCompatActivity() {
                     i++
                     continue
                 }
-            }
-            else if (expression.startsWith("sin", i)) {
+            } else if (expression.startsWith("sin", i)) {
                 i += 3
                 if (i < expression.length && expression[i] == '(') {
                     i++
@@ -166,13 +177,21 @@ class CalculatorActivity : AppCompatActivity() {
             i++
         }
         while (ops.isNotEmpty()) {
-            values.add(applyOp(ops.removeAt(ops.size - 1), values.removeAt(values.size - 1), values.removeAt(values.size - 1)))
+            values.add(
+                applyOp(
+                    ops.removeAt(ops.size - 1),
+                    values.removeAt(values.size - 1),
+                    values.removeAt(values.size - 1)
+                )
+            )
         }
         return values.last()
     }
+
     fun isOperator(c: Char): Boolean {
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '%'
     }
+
     fun precedence(op: Char): Int {
         return when (op) {
             '+', '-' -> 1
@@ -180,6 +199,7 @@ class CalculatorActivity : AppCompatActivity() {
             else -> 0
         }
     }
+
     fun applyOp(op: Char, b: Double, a: Double): Double {
         return when (op) {
             '+' -> a + b

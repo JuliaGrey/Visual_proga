@@ -24,6 +24,7 @@ class GPS : AppCompatActivity(), LocationListener {
     private lateinit var tv: TextView
     private lateinit var lm: LocationManager
     private var tracking = false
+    private val gpsFile = "gps2.json"
     private val df = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,35 +39,53 @@ class GPS : AppCompatActivity(), LocationListener {
     }
 
     private fun startTracking() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                1
+            )
             return
         }
 
         lm.getLastKnownLocation(LocationManager.GPS_PROVIDER)?.let { update(it) }
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10f, this)
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0f, this)
         tracking = true
-        saveToJson("""{"event":"start","time":"${df.format(Date())}"}""")
+        saveToJson("""{"start","time":"${df.format(Date())}"}""")
     }
 
     private fun stopTracking() {
         lm.removeUpdates(this)
         tracking = false
-        saveToJson("""{"event":"stop","time":"${df.format(Date())}"}""")
+        saveToJson("""{"stop","time":"${df.format(Date())}"}""")
     }
 
     override fun onLocationChanged(l: Location) {
         update(l)
-        if (tracking) saveToJson("""{"lat":${l.latitude},"lon":${l.longitude},"alt":${l.altitude},"time":"${df.format(Date(l.time))}"}""")
+        if (tracking) saveToJson(
+            """{"lat":${l.latitude},"lon":${l.longitude},"alt":${l.altitude},"time":"${
+                df.format(
+                    Date(l.time)
+                )
+            }"}"""
+        )
     }
 
     private fun update(l: Location) {
-        tv.text = "Lat: ${l.latitude}\nLon: ${l.longitude}\nAlt: ${l.altitude}\nTime: ${df.format(Date(l.time))}"
+        tv.text =
+            "Lat: ${l.latitude}\nLon: ${l.longitude}\nAlt: ${l.altitude}\nTime: ${df.format(Date(l.time))}"
     }
 
     private fun saveToJson(json: String) {
         try {
-            File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "gps.json").let {
+            File(
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
+                gpsFile
+            ).let {
                 FileWriter(it, true).use { fw -> fw.write("$json\n") }
             }
         } catch (e: Exception) {

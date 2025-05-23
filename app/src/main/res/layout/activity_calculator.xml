@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#4B0404"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_num7"
+                style="@style/Numbers"
+                android:text="7"></TextView>
+
+            <TextView
+                android:id="@+id/b_num8"
+                style="@style/Numbers"
+                android:text="8"></TextView>
+
+            <TextView
+                android:id="@+id/b_num9"
+                style="@style/Numbers"
+                android:text="9"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_sc"
+                style="@style/Numbers"
+                android:text="("></TextView>
+
+            <TextView
+                android:id="@+id/b_num_sc1"
+                style="@style/Numbers"
+                android:text=")"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_num4"
+                style="@style/Numbers"
+                android:text="4"></TextView>
+
+            <TextView
+                android:id="@+id/b_num5"
+                style="@style/Numbers"
+                android:text="5"></TextView>
+
+            <TextView
+                android:id="@+id/b_num6"
+                style="@style/Numbers"
+                android:text="6"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_pr"
+                style="@style/Operations"
+                android:text="%"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_pt"
+                style="@style/Operations"
+                android:text="/"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_num1"
+                style="@style/Numbers"
+                android:text="1"></TextView>
+
+            <TextView
+                android:id="@+id/b_num2"
+                style="@style/Numbers"
+                android:text="2"></TextView>
+
+            <TextView
+                android:id="@+id/b_num3"
+                style="@style/Numbers"
+                android:text="3"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_gh"
+                style="@style/Operations"
+                android:text="*"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_plus"
+                style="@style/Operations"
+                android:text="+"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_num000"
+                style="@style/Numbers"
+                android:text="000"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_pnt"
+                style="@style/Numbers"
+                android:text="."></TextView>
+
+            <TextView
+                android:id="@+id/b_num0"
+                style="@style/Numbers"
+                android:text="0"></TextView>
+
+            <TextView
+                android:id="@+id/b_num_min"
+                style="@style/Operations"
+                android:text="-"></TextView>
+
+            <TextView
+                android:id="@+id/b_del"
+                style="@style/Operations"
+                android:background="#424040"
+                android:text="C"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/b_equal"
+                style="@style/Operations"
+                android:text="="
+                android:textColor="#D90000"
+                android:textSize="40sp"></TextView>
+
+            <TextView
+                android:id="@+id/b_sqrt"
+                style="@style/Operations"
+                android:text="sqrt"></TextView>
+
+            <TextView
+                android:id="@+id/b_cos"
+                style="@style/Operations"
+                android:text="cos"></TextView>
+
+            <TextView
+                android:id="@+id/b_sin"
+                style="@style/Operations"
+                android:text="sin"></TextView>
+
+            <TextView
+                android:id="@+id/b_pi"
+                style="@style/Numbers"
+                android:text="pi"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
